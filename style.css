@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Yantramanav:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 200;
+}
+#removeWords, #text-manipulation{
+    visibility: hidden;
+}
+
+h1{
+   text-align: center;
+
+
+    font-family: 'Yantramanav', sans-serif;
+    
+}
+
+#result p {
+    transition: margin-left 0.5s ease; /* Add a smooth transition effect */
+    width: fit-content;
+}
+
+
+
+#result{
+    font-family: 'Caveat', cursive;
+   
+
+}
+
+#input {
+    position: relative;
+}
+
+#text-over-textarea {
+  
+    
+    width: 100%;
+    position: absolute;
+    margin-top: 9%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+#first{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-51%, -49%);
+     
+}
+
+#removeWords{
+    text-align: center;
+    background-color: gray;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding:2%;
+    
+}
+
+#text-manipulation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px; /* Adjust the value according to your preference */
+    border: 2px solid brown;
+    padding: 2%;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#text-manipulation > button {
+    margin-bottom: 0; /* Reset any existing margin-bottom */
+    margin-right: 20px; /* Adjust the value according to your preference */
+  
+}
+
+button{
+    padding: 2%;
+    background-color: rgb(113, 180, 113);
+    border: none;
+
+}
+
+#samplePoem{
+    margin-left: 2%;
+}
+
+#apropos{
+    position: relative;
+    background-color: grey;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 1% 2%;
+    margin: 5%;
+    display: none;
+    
+}
+
+#apropos > span{
+    float: right;
+}
+
+
+

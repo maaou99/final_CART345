@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="first">
+        <br><br> 
+        <h1>A poem Juggle</h1>
+        <div id="apropos">
+            <span onclick="document.getElementById('apropos').style.display = 'none'">X</span>
+            <br>
+            <h3>A propos</h3>
+            <p>As we explore text manipulation, this project focuses on how changing the structure, order, and number of words can alter the meaning. </p>
+            <p>Specifically, we emphasize the impact on poems. While prose relies on the overall structure, moving the position of each word separately can completely change the intention of the poem as it is read differently.</p>
+            <p>This approach not only modifies the intention of the poem but also provides an opportunity to interpret the meaning in a different way.</p>
+       <br>
+        </div>
+        <br>
+        <div id="input">
+        
+            <div id="text-over-textarea">
+                
+                <label for="userText">Paste your text (max 850 characters) here: or <button onclick="samplePoem()" id="samplePoem">Get sample poem</button></label>
+                <br>
+            </div>
+
+        <textarea id="userText" rows="10" cols="80"  oninput="limitTextarea()" maxlength="850"></textarea>
+  
+    </div>
+           
+    <div id="result"></div>
+
+    <br><br><br>  
+    
+    <div id="view-apropos">
+        <button onclick="view()">View</button>
+        <button onclick="document.getElementById('apropos').style.display = 'block'">apropos</button>
+    </div>
+</div>
+
+<div id="text-manipulation">
+    <button onclick="shuffleText()">Shuffle Text</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="document.getElementById('removeWords').style.visibility = 'visible'">Remove words</button>
+    <button onclick="whiteSpace()">Move lines</button>
+    <!-- <button onclick="whiteSpaceWords()">Move words</button> -->
+</div>
+
+<div id="removeWords">
+    <label for="numWords">Number of words to remove:</label>
+    <input type="number" id="numWords" min="1">
+    <button onclick="removeWords()">OK</button>
+</div>
+
+
+<br>
+<br>
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
